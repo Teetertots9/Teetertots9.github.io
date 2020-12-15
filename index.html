@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <style>
+            body {
+                background-image: url("https://designshack.net/wp-content/uploads/best-subtle-black-white-background-textures.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            body h2 {
+                color: #74B1E3;
+            }
+            .container h2 {
+              margin-top: 1em;
+            }
+            .container h3 {
+              margin-top: 1.5em;
+            }
+            .rounded {
+               margin:auto;
+               display: block;
+            }
+            .container {
+                border: .3em inset#74B1E3;
+                background-color: #23272A;
+                color: white;
+                padding: 1em;
+                padding-top: 5em;
+            }
+            .container .btn {
+                margin-bottom: 1em;
+                margin-top: 1em;
+                width: 100%;
+            }
+            .card {
+                color: black;
+                border: .1em solid whitesmoke;
+            }
+            .card li {
+                list-style-type: none;
+            }
+            .modal {
+                color: black;
+            }
+            .modal a {
+              color: white;
+            }
+            .carousel-caption {
+                background: rgba(0, 0, 0, 0.35);
+            }
+            .n {
+              position: fixed;
+              width: 100%;
+              z-index: 1000;
+            }
+        </style>
+    </head>
+    <body>
+      <div class="n">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Alice Teeters</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#education" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Education
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#tallaght">Tallaght</a></li>
+                        <li><a class="dropdown-item" href="#stillorgan">Stillorgan</a></li>
+                        <li><a class="dropdown-item" href="#templeogue">Templeogue</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#work">WorkExperience</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#interests">Interests</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </nav>
+    </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col"></div>
+                <div class="col">
+                    <img class="rounded" src="images/commcrop.png" width="150" height="150">
+                    <h1>Alice(Andrew) Teeters</h1>
+                    <h2>Full-Stack Developer</h2>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <a href="files/CV.pdf" download="CV">
+                  <button type="button" class="btn btn-outline-primary btn-lg">Download CV</button>
+                </a>
+              </div>
+                <div class="col-sm-12 col-md-6">
+                    <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Contact Me
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg text-white">
+                          <div class="modal-content">
+                            <div class="modal-header  bg-dark">
+                              <h2 class="modal-title" id="exampleModalLabel">Contact Me</h2>
+                            </div>
+                            <div class="modal-body  bg-dark">
+                                <h2>Email:</h2>
+                                <h3>alice.teeters9@gmail.com</h3>
+                                <h2>LinkedIn:</h2>
+                                <h3><a href="https://www.linkedin.com/in/andrew-teeters-339a10159/">
+                                    LinkedIn</a></h3>
+                            </div>
+                            <div class="modal-footer  bg-dark">
+                                <button type="button" class="btn btn-outline-info btn-lg" data-bs-dismiss="modal">Close</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button class="btn btn-outline-info btn-lg" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target=".multi-collapse" aria-expanded="false" 
+                    aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3 multiCollapseExample4">
+                        View All
+                    </button>
+                </div>
+            </div>
+            <div id="education">
+            <h2>Education</h2>
+            <h3 id="tallaght">TU Dublin Tallaght Campus - 2017 -> current</h3>
+            <div class="modules">
+                <h3>Modules</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                        <a class="btn btn-outline-light btn-lg" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            First Year
+                        </a>
+                      <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card text-white bg-dark card-body" >
+                            <ul>
+                                <li>Software Development 1(A)</li> 
+                                <li>Software Development 2 (A)</li>
+                                <li>Object Orientated Systems Analysis (A)</li>
+                                <li>Statistics 1 (A)</li>
+                                <li>Discrete Maths 1 (A)</li>
+                                <li>Operating Systems Fundamentals (A)</li>
+                                <li>Database Fundamentals (A)</li>
+                                <li>Social Media Communications (A)</li>
+                                <li>Fundamentals of Interface and Web Design (A)</li>
+                                <li>Learning to Learn at 3rd Level (A)</li>
+                                <li>Business & Information System (B+)</li>
+                                <li>Computer Architecture (A)</li>
+                            </ul>                        
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                            <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                                Second Year
+                            </button>
+                          <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card text-white bg-dark card-body">
+                                <ul>
+                                    <li>Software Quality Assurance and Testing (B)</li>
+                                    <li>Software Development 3 (A)</li> 
+                                    <li>Network Fundamentals (A)</li> 
+                                    <li>Advanced Database Technologies (B)</li> 
+                                    <li>Discrete Maths 2 (A)</li> 
+                                    <li>Client Side Web Development (A)</li> 
+                                    <li>Software Development 4 (B)</li> 
+                                    <li>Database Administration and Analysis (C+)</li> 
+                                    <li>Information Security (C)</li> 
+                                    <li>Year 2 Project (A)</li> 
+                                    <li>Management Science (A)</li> 
+                                    <li>Routing & Switching (A)</li>  
+                                </ul>                       
+                            </div>
+                          </div>
+                        
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3"> 
+                            <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+                                Third Year
+                            </button>
+                          <div class="collapse multi-collapse" id="multiCollapseExample3">
+                            <div class="card text-white bg-dark card-body">
+                                <ul>
+                                    <li>Server-side Web Development (C+)</li> 
+                                    <li>Operating Systems (C)</li> 
+                                    <li>Cloud Services & Distributed Computing (C)</li> 
+                                    <li>Big Data Technologies (C)</li> 
+                                    <li>Data Structures & Algorithms (B)</li> 
+                                    <li>Data Analysis (C+)</li>
+                                </ul>                     
+                            </div>
+                          </div>
+                        
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                            <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
+                                Fourth Year
+                            </button>
+                          <div class="collapse multi-collapse" id="multiCollapseExample4">
+                            <div class="card text-white bg-dark card-body">
+                                <ul>
+                                    <li>Interactive Media Design & Visualisation</li> 
+                                    <li>Information Management</li> 
+                                    <li>Enterprise Application Development</li> 
+                                    <li>Enterprise Performance Architecture</li> 
+                                    <li>Applied Machine Learning</li>
+                                    <li>Project</li>
+                                </ul>                   
+                            </div>
+                          </div>
+                        </div>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="row">
+                <h3>Projects</h3>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
+                            Second Year Project
+                        </button>
+                      <div class="collapse multi-collapse" id="multiCollapseExample5">
+                        <div class="card text-white bg-dark card-body">
+                            <h4>Tattoo Appointment Booking System.</h4>
+                            <h5>Description: </h5>
+                            <p>
+                                A team project involving the development of a web based tattoo appointment booking system where many
+                                users can create and manage appointments for tattoos. Features include: different levels of users; Customer,
+                                Artist, Admin, appointment booking, and a gallery of an artist’s work that can be updated by the artist.
+                            </p> 
+                                <h5>Challenges Faced:</h5>
+                                <ul>
+                                    <li><h6>Time management:</h6>Balancing work on the project, assignments and responsibilities with
+                                    societies and clubs.</li>
+                                    <li><h6>Error handling:</h6>Errors that would appear during design, development and/or testing.</li>
+                                </ul>
+                                <h5>Technologies & Tools Used:</h5>
+                                <ul>
+                                    <li>Play Framework</li>
+                                    <li>HTML5</li>
+                                    <li>CSS</li>
+                                    <li>Java</li>
+                                    <li>JavaScript</li>
+                                    <li>SQL</li>
+                                    <li>Scala</li>
+                            </ul>     
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">
+                            Fourth Year Project
+                        </button>
+                      <div class="collapse multi-collapse" id="multiCollapseExample6">
+                        <div class="card text-white bg-dark card-body">
+                            <h4>Séobooker</h4>
+                            <h5>Description:</h5>
+                            <p>An individual project I am currently working on.
+                                 It is a web application designed to allow indie/new artists to more easily apply to play at events and for Venues/Event Organizers to create events that they need an act for.
+                                 It will also allow fans of either or both to track the events for them and purchase tickets to said events.
+                            </p>
+                            <h5>Challenges Faced:</h5>
+                            <ul>
+                                <li><h6>Time management:</h6>
+                                    Balancing work on this project, assignments and responsibilities with societies and clubs.
+                                </li>
+                                <li><h6>Testing:</h6>
+                                    Testing to make sure all the functions of the project are working as intended. 
+                                </li>  
+                                <li><h6>Error handling:</h6>
+                                    Fixing any errors that would appear during design, development and/or testing.
+                                </li>  
+                                <li><h6>Research:</h6>
+                                    Figuring out which technologies I can use to make the application work as intended.
+                                </li>
+                            </ul> 
+                            <h5>Technologies & Tools Used:</h5>
+                                <ul>
+                                    <li>ReactJS</li>
+                                    <li>Azure Devops</li>
+                                    <li>Trello</li>
+                                    <li>ESlint</li>
+                                    <li>Gatsby</li>
+                                    <li>NodeJS</li>
+                                    <li>Postman</li>
+                                    <li>Express</li>
+                                    <li>Stripe</li>
+                                    <li>Terraform</li>
+                                    <li>AWS:<ul>
+                                        <li>S3</li>
+                                        <li>DynamoDB</li>
+                                        <li>API Gateway</li>
+                                        <li>Lambda</li>
+                                        <li>Cloudwatch</li>
+                                        <li>Cognito</li>
+                                        <li>SNS</li>
+                                        <li>SQS</li>
+                                    </ul></li>
+                            </ul>          
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="stillorgan">Stillorgan College of Further Education - 2016 -> 2017</h3>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                        <a class="btn btn-outline-light btn-lg" data-bs-toggle="collapse" href="#multiCollapseExample7" role="button" aria-expanded="false" aria-controls="multiCollapseExample7">
+                            Modules
+                        </a>
+                      <div class="collapse multi-collapse" id="multiCollapseExample7">
+                        <div class="card text-white bg-dark card-body" >
+                            <ul>
+                                <li>Communications (Distinction)</li> 
+                                <li>Combined Materials (Pass)</li>
+                                <li>Painting (Pass)</li>
+                                <li>Work Experience (Merit)</li>
+                                <li>Radio Programme Production (Merit)</li>
+                                <li>Animation (Pass)</li>
+                                <li>Animation Layout Design (Pass)</li>
+                                <li>Animation Drawing Studies (Pass)</li>
+                                <li>Drawing (Pass)</li>
+                                <li>Script Writing (Distinction)</li>
+                            </ul>                        
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample8" aria-expanded="false" aria-controls="multiCollapseExample8">
+                        Animation Project
+                    </button>
+                  <div class="collapse multi-collapse" id="multiCollapseExample8">
+                    <div class="card text-white bg-dark card-body">
+                        <h4>30 Second Animation</h4>
+                        <h5>Description: </h5>
+                        <p>
+                            A team project involving the creation of a 30 second animation advertisement encouraging people to recycle. It was made using stop-motion animation.
+                        </p> 
+                            <h5>Challenges Faced:</h5>
+                            <ul>
+                                <li><h6>Prop Creation:</h6>Creating the props to be used in the animation</li>
+                                <li><h6>Audio Recording:</h6>Recording the dialogue audio for the advertisement</li>
+                                <li><h6>Audio Mixing:</h6>Editing the audio files together for use in the advertisement</li>
+                                <li><h6>Animating:</h6>Moving the props to the right positions and taking a capture of it</li>
+                            </ul>    
+                    </div>
+                  </div>
+            </div>
+                </div>
+                <h3 id="templeogue">Templeogue College C.S.Sp - 2010 -> 2016</h3>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample13" aria-expanded="false" aria-controls="multiCollapseExample13">
+                      Subjects & Grades
+                  </button>
+                <div class="collapse multi-collapse" id="multiCollapseExample13">
+                  <div class="card text-white bg-dark card-body">
+                      <h4>Total Points: 415</h4>
+                      <ul>
+                          <li>English: HC1</li> 
+                          <li>Maths: HC3</li>
+                          <li>Irish: OC2</li>
+                          <li>French: HD2</li>
+                          <li>History: HC2</li>
+                          <li>Art: HC2</li>
+                          <li>Music: HB2</li>
+                      </ul>                  
+                  </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+                <div id="work">
+                <h2>Work Experience</h2>
+                <div class="row">
+                    <h3>Fathom Tech - 20/01/2020 -> 28/08/2020</h3>
+                    <div class="col-sm-12 col-md-4 col-lg-4">
+                        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample9" aria-expanded="false" aria-controls="multiCollapseExample9">
+                            Responsibilities
+                        </button>
+                      <div class="collapse multi-collapse" id="multiCollapseExample9">
+                        <div class="card text-white bg-dark card-body">
+                            <ul>
+                                <li>Created Functions and UI-Components on projects</li> 
+                                <li>Fixing Bugs and Errors</li>
+                                <li>Helped with planning of projects</li>
+                                <li>Created Architecture for projects</li>
+                            </ul>                  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample10" aria-expanded="false" aria-controls="multiCollapseExample10">
+                            Projects
+                        </button>
+                      <div class="collapse multi-collapse" id="multiCollapseExample10">
+                        <div class="card text-white bg-dark card-body">
+                            <ul>
+                                <li><h6>Nualang:</h6>
+                                    A language learning application targeted towards teachers and students. 
+                                    Users can create their own courses that they can share or use for their own classes.</li>
+                                <li><h6>HelpANeighbour/WeLoveLocal:</h6>
+                                    An application for creating and applying for requests of help made to assist those self-isolating during the COVID-19 pandemic.</li>
+                                <li><h6>Stor/KeepAway:</h6>
+                                    A game application where you answer questions to get hints to find treasure at locations on a real-world map all the while obeying social distancing guidelines.</li>
+                            </ul>                  
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <h3>Dunnes Stores - 20/11/2017 -> 24/12/2017</h3>
+                  <div class="col-sm-12">
+                      <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample14" aria-expanded="false" aria-controls="multiCollapseExample14">
+                          Responsibilities
+                      </button>
+                    <div class="collapse multi-collapse" id="multiCollapseExample14">
+                      <div class="card text-white bg-dark card-body">
+                        <h4>Drapery Assistant</h4>
+                          <ul>
+                            <li>Restocking Shelves</li>
+                            <li>Cleaning Duties</li>
+                            <li>Serving Customers</li>
+                            <li>Unpacking Newly Delivered Stock</li>
+                            <li>General Assistance</li>
+                          </ul>                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="interests">
+                <h2>Interests</h2>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample11" aria-expanded="false" aria-controls="multiCollapseExample11">
+                            Work/Project
+                        </button>
+                      <div class="collapse multi-collapse" id="multiCollapseExample11">
+                        <div class="card text-white bg-dark card-body">
+                            <p>I am interested in working on Web Applications / Mobile Applications as I have experience working on these. I am also interested in working on the coding for a video game as they are a big hobby of mine.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample12" aria-expanded="false" aria-controls="multiCollapseExample12">
+                            Hobbies
+                        </button>
+                      <div class="collapse multi-collapse" id="multiCollapseExample12">
+                        <div class="card text-white bg-dark card-body">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+                                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+                                  <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="images/hades.jpg" class="d-block w-100 h-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Video Games</h5>
+                                      <p>I like playing video games such as Hades, Pokémon, BloodBorne & Doom</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="images/MSF.jpg" class="d-block w-100 h-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Music</h5>
+                                      <p>I like listening to different types of music such as Mystery Skulls, My Chemical Romance & St.Vincent</p>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="images/DND.jpg" class="d-block w-100 h-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                      <h5>Dungeons & Dragons</h5>
+                                      <p>I like playing the table-top game Dungeons and Dragons with my friends. I am typically the Dungeon Master that organizes & runs the games</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </a>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </body>
+</html>
