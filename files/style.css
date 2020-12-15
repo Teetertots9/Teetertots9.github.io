@@ -35,7 +35,8 @@ body h2 {
   color: white;
 }
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(0, 0, 0, 0.35) !important;
+    color: white;
 }
 .n {
   position: fixed;
