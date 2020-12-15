@@ -1,0 +1,63 @@
+body {
+    background-image: url("https://designshack.net/wp-content/uploads/best-subtle-black-white-background-textures.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body h2 {
+    color: #74B1E3;
+}
+.container h2 {
+  margin-top: 1em;
+}
+.container h3 {
+  margin-top: 1.5em;
+}
+.rounded {
+   margin:auto;
+   display: block;
+}
+.container .btn {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    width: 100%;
+}
+.card {
+    color: black;
+    border: .1em solid whitesmoke;
+}
+.card li {
+    list-style-type: none;
+}
+.modal {
+    color: black;
+}
+.modal a {
+  color: white;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.35);
+}
+.n {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.container {
+    border: .3em inset#74B1E3;
+    background-color: #23272A;
+    color: white;
+    padding: 1em;
+    padding-top: 5em;
+    width: 70%;
+    margin: auto;
+}
+@media screen and (max-width: 840px){
+  .container {
+    border: .3em inset#74B1E3;
+    background-color: #23272A;
+    color: white;
+    padding: 1em;
+    padding-top: 5em;
+    width: 100%;
+}
+}
