@@ -12,9 +12,10 @@ body h2 {
 .container h3 {
   margin-top: 1.5em;
 }
-.rounded {
+.profile {
    margin:auto;
    display: block;
+   border-radius: 50%;
 }
 .container .btn {
     margin-bottom: 1em;
